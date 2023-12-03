@@ -1,4 +1,5 @@
 import day1.Trebuchet
+import day2.InputParser
 
 fun main() {
     fun part1(input: List<String>): Int {
@@ -11,7 +12,8 @@ fun main() {
 
     // test if implementation meets criteria from the description, like:
     val testInput = readInput("Day01_test")
-    val t = Trebuchet(testInput).sum();
 
-    print(t);
+    println(InputParser(testInput).calculatePower())
+
+   // print(testInput);
 }
